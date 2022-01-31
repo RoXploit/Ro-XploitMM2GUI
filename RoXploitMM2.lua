@@ -1,4 +1,6 @@
 local DMM2Gui = Instance.new("ScreenGui")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
 local Frame = Instance.new("Frame")
 local CloseBtn = Instance.new("TextButton")
 local DropShadow = Instance.new("Frame")
@@ -89,15 +91,15 @@ Open.TextScaled = true
 Open.TextSize = 14
 Open.TextWrapped = true
 
-script.Parent.MouseButton1Click:Connect(function()
+script.Parent.Open.MouseButton1Click:Connect(function()
 	script.Parent.Parent.Parent.Open:TweenPosition(UDim2.new(0.924, 0,0.958, 0))
 	script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,1.45,0),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,2)
 end)
 
 local toggled = false
 
-script.Parent.MouseButton1Click:Connect(function()
-	local h = script.Parent.Parent.Parent:FindFirstChild("Humanoid")
+script.Parent.GodMode.MouseButton1Click:Connect(function()
+	local h = game.Players.LocalPlayer.Character.Humanoid
 	if h then
 		if toggled == false then
 			h.MaxHealth = math.huge
@@ -124,17 +126,36 @@ end)
 
 
 
-script.Parent.MouseButton1Click:Connect(function()
+script.Parent.UltimateCrasher.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "Lagging...",
+		Text = "Lagging the server, note that if it lags too much it may crash!",
+		Duration = 5
+})
+wait(3)
 	while wait(.25) do
-		Instance.new("Part")
-		Instance.new("TrussPart")
-		Instance.new("MeshPart")
-		Instance.new("WedgePart")
-		Instance.new("Explosion")
+		Instance.new("Part").Parent = workspace	
+		Instance.new("TrussPart").Parent = workspace	
+		Instance.new("MeshPart").Parent = workspace	
+		Instance.new("WedgePart").Parent = workspace	
+		Instance.new("Explosion").Parent = workspace	
 	end
 end)
 
-script.Parent.MouseButton1Click:Connect(function()
+function Destroy()
+game.CoreGui:WaitForChild("DMM2Gui"):Destroy()
+end
+
+Mouse.KeyDown:Connect(function(key))
+	if key == "c" or "C" then
+		Destroy()
+	end
+	end)
+
+script.Parent.CloseBtn.MouseButton1Click:Connect(function()
 	script.Parent:TweenPosition(UDim2.new(0.924, 0,1, 0))
+	wait(0.75)
 	script.Parent.Parent.Frame:TweenPosition(UDim2.new(0.5,0,0.5,0),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,1.35)
 end)
+
+
