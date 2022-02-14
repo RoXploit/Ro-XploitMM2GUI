@@ -1,5 +1,4 @@
-## Ro-Xploit MM2 GUI (!!!! EXPERIMENTAL AREA !!!!)
-
+## Welcome to the Experimental area of Ro-Xploit
 
 ### Expect bugs!
 
