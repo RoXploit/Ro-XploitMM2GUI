@@ -1,0 +1,9 @@
+==================================
+RO-XPLOIT CODE OF CONDUCT
+==================================
+
+1. Software Policy
+
+When using a script ("Software") made by Ro-Xploit, you must not:
+A: Use the Software for illegal purposes, including doxing, hacking or exploiting (exploiting to ruin the experience for others, our software is EXPLOITS FOR POWER-UPS and is client sided!)
+B: Redistribute the Software without our permission
