@@ -7,3 +7,27 @@ RO-XPLOIT CODE OF CONDUCT
 When using a script ("Software") made by Ro-Xploit, you must not:
 A: Use the Software for illegal purposes, including doxing, hacking or exploiting (exploiting to ruin the experience for others, our software is EXPLOITS FOR POWER-UPS and is client sided!)
 B: Redistribute the Software without our permission
+C: Claim that the Software is your property
+D: Claim your own copyright policy on our Software
+
+2. Safety Policy
+
+To keep all users and scripts safe, please report all problems to our owner, David by making an issue or emailing him at davidlimonka61@gmail.com.
+
+We do not tolerate illegal activites and you will be blacklisted from publishing, using and reviewing our projects!
+
+3. Reviewing Policy
+
+Under the Safety Policy, you must !!NEVER!! leave the Roblox username of the owner or any user who contributed to this, you !!MUST!! use their Discord tag or other information (e.g GitHub link)
+
+You can only leave your username on the review, this Policy applies to these platforms:
+* YouTube (Does not apply to Live Streams but limited version of Safety Policy must be adhered to)
+* TikTok (Does not apply to 抖音/Douyin/Chinese version of TikTok)
+* Twitch (Does not apply to streamers/clippers who ask us in advance to review our product(s))
+* Vimeo
+* Streamable
+* Gyazo
+* Discord
+* Imgur
+* Reddit
+
