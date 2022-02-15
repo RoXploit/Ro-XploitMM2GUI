@@ -30,4 +30,20 @@ You can only leave your username on the review, this Policy applies to these pla
 * Discord
 * Imgur
 * Reddit
+* Dropbox
+* Anonfiles
 
+
+4. Appeal Policy
+
+If you have been blacklisted from using, reviewing or publishing our products, you can make an appeal, please send your appeal to roxploitappeals@outlook.com and enter the following information:
+
+* Roblox username or Discord tag
+* Why you have been banned (if known)
+* Any other information (which staff member banned you, what exploit)
+* What you will do to make things right
+
+
+5. Contact us
+
+You can contact us about this policy or any other concerns through a GitHub issue or by emailing davidlimonka61@gmail.com
