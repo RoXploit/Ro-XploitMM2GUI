@@ -1,5 +1,11 @@
 -- github/RoXploit/Ro-XploitMM2Gui
 
+
+
+-- THIS IS AN EXPERIMENTAL AREA! Expect bugs. Make an issue or fix our code thru a PR on our GH page if there is one!
+
+
+
 local DMM2Gui = Instance.new("ScreenGui")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
@@ -12,7 +18,8 @@ local UltimateCrasher = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
  
 DMM2Gui.Name = "DMM2Gui"
-DMM2Gui.Parent = game.CoreGui
+DMM2Gui.ResetOnSpawn = false
+DMM2Gui.Parent = LocalPlayer.PlayerGui
 
 Frame.Parent = DMM2Gui
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -26,6 +33,9 @@ CloseBtn.Parent = Frame
 CloseBtn.BackgroundColor3 = Color3.new(1, 0.203922, 0.203922)
 CloseBtn.Position = UDim2.new(0.85043478, 0, 0, 0)
 CloseBtn.Size = UDim2.new(0, 86, 0, 37)
+local UICornerCB = Instance.new("UICorner")
+UICornerCB.CornerRadius = Vector2.new(0,15)
+UICornerCB.Parent = CloseBtn
 CloseBtn.ZIndex = 2
 CloseBtn.Font = Enum.Font.SourceSansBold
 CloseBtn.Text = "Close"
@@ -36,6 +46,9 @@ CloseBtn.TextWrapped = true
 
 DropShadow.Name = "DropShadow"
 DropShadow.Parent = CloseBtn
+local UICornerDS = Instance.new("UICorner")
+UICornerDS.CornerRadius = Vector2.new(0,15)
+UICornerDS.Parent = DropShadow
 DropShadow.BackgroundColor3 = Color3.new(0.454902, 0, 0)
 DropShadow.BorderSizePixel = 0
 DropShadow.Position = UDim2.new(0, 1, 0, 3)
@@ -95,6 +108,7 @@ Open.TextWrapped = true
 
 script.Parent.Open.MouseButton1Click:Connect(function()
 	script.Parent.Parent.Parent.Open:TweenPosition(UDim2.new(0.924, 0,0.958, 0))
+	wait(.64)
 	script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,1.45,0),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,2)
 end)
 
@@ -102,24 +116,24 @@ local toggled = false
 
 script.Parent.GodMode.MouseButton1Click:Connect(function()
 	local h = game.Players.LocalPlayer.Character.Humanoid
-	if h then
-		if toggled == false then
+		if not toggled then
+			toggled = true
 			h.MaxHealth = math.huge
 			h.Health = math.huge
 			Instance.new("ForceField").Parent = h.Parent
 		    script.Parent.Text = "Toggle God Mode (ON)"
-			toggled = true
+			
 		else
+			toggled = false
 			h.MaxHealth = 100
 			h.Health = 100
 			h.Parent:WaitForChild("ForceField"):Destroy()
 			script.Parent.Text = "Toggle God Mode (OFF)"
-			toggled = false
+			
 		end
-	end
 end)
 
-local toggled = false
+
 
 script.Parent.MouseButton1Click:Connect(function()
 local Event = game:GetService("ReplicatedStorage").IsXbox
@@ -134,6 +148,10 @@ script.Parent.UltimateCrasher.MouseButton1Click:Connect(function()
 		Text = "Lagging the server, note that if it lags too much it may crash!",
 		Duration = 5
 })
+		game.StarterGui:SetCore("SendNotification",{
+		Title = "Credits to David!#4771",
+		Duration = 3
+})
 wait(3)
 	while wait(.25) do
 		Instance.new("Part").Parent = workspace	
@@ -145,7 +163,7 @@ wait(3)
 end)
 
 function Destroy()
-game.CoreGui:WaitForChild("DMM2Gui"):Destroy()
+LocalPlayer.PlayerGui:WaitForChild("DMM2Gui"):Destroy()
 end
 
 Mouse.KeyDown:Connect(function(key))
