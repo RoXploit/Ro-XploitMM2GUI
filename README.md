@@ -5,7 +5,10 @@ Currently in **beta**. [*pull requests*](https://github.com/DavidTDC3377/Ro-Xplo
 
 
 To install, head to the [Pastebin](https://pastebin.com/raw/Ryut3eq8) and copy the loadstring() code
-or copy the code from our [Releases](https://github.com/RoXploit/Ro-XploitMM2GUI/releases)!
+or copy the code from our [Releases](https://github.com/RoXploit/Ro-XploitMM2GUI/releases)! Make sure you are using the latest release!
+
+
+If you'd like to help with code, you can access our [beta area](https://github.com/RoXploit/Ro-XploitMM2GUI/tree/beta-area), fork it, and then make a PR!
 
 
 <br>
