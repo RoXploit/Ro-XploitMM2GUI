@@ -28,4 +28,14 @@ If your request has been declined, we will e-mail you back on why your request h
 Your vulnerability report will also be published in the vulnerabilitys.txt file, which will include:
 * Your GitHub name
 * The vulnerability report you sent to us
-* Information
+* Any other information
+
+## How we keep your data safe
+
+We keep your data safe by using military-grade 256-bit ASL encryption, your data is also safe if you see https:// on the address bar or a lock icon.
+<br>
+We only keep your data for as long as we need it, up to 6 months max. You can read our privacy policy [here](https://docs.google.com/document/d/1bW2UYS5LSuL4b4DAaSEFUOW68VAR9YvJhHOeNoypuRo/edit?usp=sharing) and our terms of service when using DavidTDC3377 products (this includes RoXploit!) [here](https://docs.google.com/document/d/1XpxSr2dBZNieN8cGOnfaVk8xybrXD3t5lc376D8ze-Y/edit?usp=sharing)
+
+## Feedback & Complaints
+
+You can give us feedback about DavidTDC3377 or RoXploit services [here](https://forms.gle/WxPzrmL6eHbvg4LC6). Your information will **NOT** be shared with us when you complete this form.
