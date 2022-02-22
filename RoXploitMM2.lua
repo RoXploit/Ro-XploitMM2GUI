@@ -2,10 +2,6 @@
 
 
 
--- THIS IS AN EXPERIMENTAL AREA! Expect bugs. Make an issue or fix our code thru a PR on our GH page if there is one!
-
-
-
 local DMM2Gui = Instance.new("ScreenGui")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
@@ -87,7 +83,7 @@ UltimateCrasher.BorderSizePixel = 0
 UltimateCrasher.Position = UDim2.new(0.0208695661, 0, 0.612307727, 0)
 UltimateCrasher.Size = UDim2.new(0, 200, 0, 50)
 UltimateCrasher.Font = Enum.Font.SourceSansBold
-UltimateCrasher.Text = "Ultimate Crasher v1.0"
+UltimateCrasher.Text = "Ultimate Crasher v1.1"
 UltimateCrasher.TextColor3 = Color3.new(0, 0, 0)
 UltimateCrasher.TextScaled = true
 UltimateCrasher.TextSize = 14
@@ -115,7 +111,7 @@ end)
 local toggled = false
 
 script.Parent.GodMode.MouseButton1Click:Connect(function()
-	local h = game.Players.LocalPlayer.Character.Humanoid
+	local h = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
 		if not toggled then
 			toggled = true
 			h.MaxHealth = math.huge
@@ -166,8 +162,10 @@ function Destroy()
 LocalPlayer.PlayerGui:WaitForChild("DMM2Gui"):Destroy()
 end
 
+
+
 Mouse.KeyDown:Connect(function(key))
-	if key == "c" or "C" then
+	if key == "c" or "C" then -- Quick destroy / Panic button
 		Destroy()
 	end
 	end)
