@@ -19,10 +19,11 @@ DMM2Gui.Parent = LocalPlayer.PlayerGui
 
 Frame.Parent = DMM2Gui
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame.BackgroundColor3 = Color3.new(0.745098, 0.411765, 0.027451)
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-Frame.Size = UDim2.new(0, 575, 0, 325)
+Frame.BackgroundColor3 = Color3.fromRGB(176,75,124)
+Frame.Position = UDim2.new(0.5, 0, 0.501, 0)
+Frame.Size = UDim2.new(0, 575, 0, 326)
 Frame.ZIndex = 0
+
 
 CloseBtn.Name = "CloseBtn"
 CloseBtn.Parent = Frame
@@ -57,7 +58,7 @@ GodMode.BorderSizePixel = 0
 GodMode.Position = UDim2.new(0.0208695661, 0, 0.175384611, 0)
 GodMode.Size = UDim2.new(0, 200, 0, 50)
 GodMode.Font = Enum.Font.SourceSansBold
-GodMode.Text = "Toggle God Mode (OFF)"
+GodMode.Text = "Toggle God Mode (OOF)"
 GodMode.TextColor3 = Color3.new(0, 0, 0)
 GodMode.TextScaled = true
 GodMode.TextSize = 14
@@ -103,7 +104,7 @@ Open.TextSize = 14
 Open.TextWrapped = true
 
 script.Parent.Open.MouseButton1Click:Connect(function()
-	script.Parent.Parent.Parent.Open:TweenPosition(UDim2.new(0.924, 0,0.958, 0))
+	script.Parent.Parent.Parent.Open:TweenPosition(UDim2.new(0.924, 0,0.958, 0),Enum.EasingDirection.In,Enum.EasingStyle.Quint,1.856)
 	wait(.64)
 	script.Parent.Parent:TweenPosition(UDim2.new(0.5,0,1.45,0),Enum.EasingDirection.Out,Enum.EasingStyle.Sine,2)
 end)
@@ -115,7 +116,7 @@ script.Parent.GodMode.MouseButton1Click:Connect(function()
 		if not toggled then
 			toggled = true
 			h.MaxHealth = math.huge
-			h.Health = math.huge
+			h.Health = h.MaxHealth
 			Instance.new("ForceField").Parent = h.Parent
 		    script.Parent.Text = "Toggle God Mode (ON)"
 			
