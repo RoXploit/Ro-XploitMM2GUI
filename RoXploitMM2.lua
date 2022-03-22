@@ -31,7 +31,7 @@ CloseBtn.BackgroundColor3 = Color3.new(1, 0.203922, 0.203922)
 CloseBtn.Position = UDim2.new(0.85043478, 0, 0, 0)
 CloseBtn.Size = UDim2.new(0, 86, 0, 37)
 local UICornerCB = Instance.new("UICorner")
-UICornerCB.CornerRadius = Vector2.new(0,15)
+UICornerCB.CornerRadius = UDim.new(0,15)
 UICornerCB.Parent = CloseBtn
 CloseBtn.ZIndex = 2
 CloseBtn.Font = Enum.Font.SourceSansBold
@@ -44,7 +44,7 @@ CloseBtn.TextWrapped = true
 DropShadow.Name = "DropShadow"
 DropShadow.Parent = CloseBtn
 local UICornerDS = Instance.new("UICorner")
-UICornerDS.CornerRadius = Vector2.new(0,15)
+UICornerDS.CornerRadius = UDim.new(0,15)
 UICornerDS.Parent = DropShadow
 DropShadow.BackgroundColor3 = Color3.new(0.454902, 0, 0)
 DropShadow.BorderSizePixel = 0
@@ -143,11 +143,7 @@ script.Parent.UltimateCrasher.MouseButton1Click:Connect(function()
 	game.StarterGui:SetCore("SendNotification",{
 		Title = "Lagging...",
 		Text = "Lagging the server, note that if it lags too much it may crash!",
-		Duration = 5
-})
-		game.StarterGui:SetCore("SendNotification",{
-		Title = "Credits to David!#4771",
-		Duration = 3
+		Duration = 2.7
 })
 wait(3)
 	while wait(.25) do
