@@ -4,8 +4,8 @@ RO-XPLOIT CODE OF CONDUCT
 
 1. Software Policy
 
-When using a script ("Software") made by Ro-Xploit, you must not:
-A: Use the Software for illegal purposes, including doxing, hacking or exploiting (exploiting to ruin the experience for others, our software is EXPLOITS FOR POWER-UPS and is client sided!)
+When using a script ("Software", "Script" or "Code") made by Ro-Xploit, you must not:
+A: Use the Software for illegal purposes, including doxing, hacking or exploiting (exploiting to ruin the experience for others, our software is EXPLOITS FOR POWER-UPS and is client sided (NON-FE)!)
 B: Redistribute the Software without our permission
 C: Claim that the Software is your property
 D: Claim your own copyright policy on our Software
@@ -13,6 +13,9 @@ D: Claim your own copyright policy on our Software
 2. Safety Policy
 
 To keep all users and scripts safe, please report all problems to our owner, David by making an issue or emailing him at davidlimonka61@gmail.com.
+
+To protect our users, we do not allow reviewers to use the Roblox username of the contributer(s), including the owner. You can use their Discord Tag or 
+GitHub link (e.g https://github.com/profile_name_goes_here?ref=roxploit-coc) instead.
 
 We do not tolerate illegal activites and you will be blacklisted from publishing, using and reviewing our projects!
 
@@ -40,7 +43,7 @@ If you have been blacklisted from using, reviewing or publishing our products, y
 
 * Roblox username or Discord tag
 * Why you have been banned (if known)
-* Any other information (which staff member banned you, what exploit)
+* Any other information (which staff member banned you, what executor did you use, which exploit)
 * What you will do to make things right
 
 
