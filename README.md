@@ -2,7 +2,7 @@
 
 ## Installation
 
-Go to [this script](.//RoXploitMM2.lua) and click on 'Raw' to copy the script, when the raw page opens, copy the script and paste into your executor of choice (We recommend Synapse or KRNL).
+Go to [this script](.//RoXploitMM2.lua) and click on 'Raw' or click [here](https://raw.githubusercontent.com/RoXploit/Ro-XploitMM2GUI/main/RoXploitMM2.lua) to get a direct link to the raw. copy the script and paste into your executor of choice (We recommend Synapse or KRNL).
 
 ## Features
 
